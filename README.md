@@ -2,7 +2,7 @@
  * @Author: yjjmh
  * @Date: 2023-11-16 09:51:51
  * @LastEditors: yjjmh hbczysls@163.com
- * @LastEditTime: 2024-11-10 17:49:10
+ * @LastEditTime: 2025-04-23 21:56:55
  * @Description: 使用说明
 -->
 
@@ -211,6 +211,9 @@
     * 获取当前开发环境
   * 参数:
     * customRule{String}: 自定义校验规则-正则表达式,用于校验地址栏地址
+    * truth{String}: 自定义truth时的返回值，默认为dev
+    * falsehood${String}: 自定义false时的返回值，默认为prod
+    * devFlag${String}: 开发环境的标志，默认为development，用于和NODE_ENV的值做比较
   * 返回值：
     * {String}: dev - 开发环境  prod - 生产环境
   * 示例：
@@ -223,7 +226,7 @@
     * 跳转到一个新地址
   * 参数:
     * *url{String}: 要跳转的地址
-    * newTab{Boolean}: 是否用一个新的窗口打开
+    * newTab{Boolean}: 是否用一个新的窗口打开，默认为false
   * 返回值：
     无
   * 示例：
